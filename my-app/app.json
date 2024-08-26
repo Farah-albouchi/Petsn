@@ -1,0 +1,56 @@
+{
+  "expo": {
+    
+    "name": "Petsn",
+    "slug": "Petsn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Petsn.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/Screen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [ 
+        "expo-font",
+        {
+          "fonts": ["node_modules/@expo-google-fonts/source-code-pro/SourceCodePro_400Regular.ttf"]
+        }
+      ] ,
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+   
+  }
+}
